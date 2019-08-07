@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #232323;
+    color: white;
+    font-family: "Avenir", "Montserrat";
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.color-block {
+    border-radius: 10px;
+}
+
+
+.color-block:hover {
+   border: 1px solid black;
+}
+
+#info, #options, #board {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#info {
+    background-color: steelblue;
+    text-align: center;
+    font-size: 21px;
+}
+
+#options {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-family: "Raleway", Sans-serif;
+    color: steelblue;
+    margin: 0px;
+}
+
+#info-win {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0px;
+    padding: 12px;
+}
+
+
+button:hover, .selected {
+    background-color: steelblue;
+    color: white;
+    transition: 0.4s;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#board {
+    display: grid;
+    height: 100%;
+    grid-template: repeat(3, 1fr) / repeat(3, 30%);
+    grid-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+}
