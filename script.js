@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 // CONST
 const RGB = 0;
 const HSL = 1;
